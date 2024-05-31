@@ -1,11 +1,18 @@
-import React from 'react';
-import { Button } from '@tableau/tableau-ui';
+import React from "react";
+import { Button } from "@tableau/tableau-ui";
 
 function ExportBtn(props) {
   return (
-      <div>
-         <Button kind={props.style} disabled={props.disabled} onClick={props.export}>{props.label}</Button>
-      </div>
+    <div>
+      <Button
+        className="export-button"
+        kind={props.style}
+        disabled={props.disabled}
+        onClick={props.export}
+      >
+        {props.label}
+      </Button>
+    </div>
   );
 }
 
